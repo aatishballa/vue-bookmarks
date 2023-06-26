@@ -1,0 +1,102 @@
+{
+    "bookmarks": [
+      {
+        "id": 1,
+        "title": "Google",
+        "url": "https://www.google.com",
+        "category": {
+          "id": 1,
+          "title": "Search Engines"
+        },
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["search","engines"]
+    },
+    {
+        "id": 2,
+        "title": "Facebook",
+        "url": "https://www.facebook.com",
+        "category": "Social Media",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["social","network"]
+    },
+    {
+        "id": 3,
+        "title": "OpenAI",
+        "url": "https://www.openai.com",
+        "category": "Artificial Intelligence",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["AI","ML","Research"]
+    },
+    {
+        "id": 4,
+        "title": "Youtube",
+        "url": "https://www.youtube.com",
+        "category": "Video Sharing",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["video","sharing"]
+    },
+    {
+        "id": 5,
+        "title": "Amazon",
+        "url": "https://www.amazon.com",
+        "category": "E-commerce",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["shopping","e-commerce"]
+    },
+    {
+        "id": 6,
+        "title": "Wikipedia",
+        "url": "https://www.wikipedia.org",
+        "category": "Encyclopedia",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["encyclopedia","knowledge"]
+    },
+    {
+        "id": 7,
+        "title": "Netflix",
+        "url": "https://www.netflix.com",
+        "category": "Streaming",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["streaming","movies"]
+    },
+    {
+        "id": 8,
+        "title": "Twitter",
+        "url": "https://www.twitter.com",
+        "category": "Social Media",
+        "visits": 0,
+        "createdAt": "2022-01-01T12:00:00.000Z",
+        "tags": ["social","network"]
+    }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "title":"Payments",
+        "description":""
+      },
+      {
+        "id": 3,
+        "title":"Youtube",
+        "description":""
+      },
+      {
+        "id": 4,
+        "title":"Tutorials",
+        "description":""
+      },
+      {
+        "id":2,
+        "title":"Shopping",
+        "description": ""
+      }
+    ],
+  "profile": { "name": "typicode" }
+}
