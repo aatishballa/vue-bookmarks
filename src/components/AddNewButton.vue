@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn btn-primary rounded-full absolute bottom-12 right-24 h-20 w-20"
+    class="btn btn-primary rounded-full fixed bottom-4 right-4 h-20 w-20"
     @click="showModal"
   >
     <Icon size="24">
