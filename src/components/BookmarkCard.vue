@@ -2,7 +2,7 @@
   <a
     :href="bookmark.url"
     target="_blank"
-    class="hover:shadow-lg transition-shadow  h-25 px-4 py-4 rounded-xl bg-neutral-200"
+    class="hover:shadow-lg transition-shadow  h-25 px-4 py-4 rounded-md bg-neutral-300"
   >
     <div
       class="flex flex-col"

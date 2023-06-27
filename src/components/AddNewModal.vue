@@ -9,12 +9,57 @@
         method="dialog"
         class="modal-box bg-white"
       >
-        <h3 class="font-bold text-lg">
-          Hello!
-        </h3>
-        <p class="py-4">
-          Press ESC key or click outside to close
-        </p>
+        <div class="tabs tabs-boxed w-full flex">
+          <a
+            :class="getClasses('bookmark')"
+            @click="activeTab='bookmark'"
+          >
+            Bookmark
+          </a> 
+          <a
+            :class="getClasses('category')"
+            @click="activeTab='category'"
+          >
+            Category
+          </a> 
+        </div>
+    
+        <div
+          v-if="activeTab === 'bookmark'"
+          class="py-4"
+        >
+          <input
+            class="input input-bordered w-full mb-2"
+            placeholder="Title"
+          >
+
+          <input
+            class="input input-bordered w-full mb-2"
+            placeholder="Url"
+          >
+
+          <select class="select select-bordered w-full mb-2">
+            <option
+              disabled
+              selected
+            >
+              Tags
+            </option>
+            <option>Han Solo</option>
+            <option>Greedo</option>
+          </select>
+
+          <select class="select select-bordered w-full">
+            <option
+              disabled
+              selected
+            >
+              Group
+            </option>
+            <option>Han Solo</option>
+            <option>Greedo</option>
+          </select>
+        </div>
       </form>
       
       <form
@@ -28,6 +73,18 @@
 </template>
 
 <script setup lang="ts">
+
+import { ref } from "vue";
+
+const activeTab = ref('bookmark')
+
+
+
+
+const getClasses = (tab: string) => {
+  const defaultClass = 'tab flex-1'
+  return tab === activeTab.value ? `${defaultClass} tab-active` : `${defaultClass}`
+}
 
 </script>
 

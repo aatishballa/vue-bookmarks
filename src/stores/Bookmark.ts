@@ -1,12 +1,12 @@
 import { defineStore } from "pinia";
 import $axios from "@/utils/axios";
-import type { Bookmark } from "@/types/response";
+import type { Bookmark, Category } from "@/types/response";
 
 export const useBookmarkStore = defineStore("bookmark", {
   state: () => {
     return {
       bookmarks: [] as Bookmark[],
-      test: "test"
+      categories: [] as Category[],
     }
   },
   actions: {
@@ -46,6 +46,14 @@ export const useBookmarkStore = defineStore("bookmark", {
     async addTagToBookmark(id: number, tag: string) {
       try {
         await $axios.post(`/bookmarks/${id}/tags`, { tag })
+      } catch (error: any) {
+        throw new Error(error)
+      }
+    },
+    async fetchCategories() {
+      try {
+        const response = await $axios.get('/categories')
+        this.categories = response.data as Category[];
       } catch (error: any) {
         throw new Error(error)
       }
