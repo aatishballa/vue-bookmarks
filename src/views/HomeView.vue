@@ -1,11 +1,10 @@
 <template>
-  <div class="mx-auto w-8/12 py-2 px-2">
+  <div class="mx-auto lg:w-9/12 py-4 px-4">
     <search-bar
       v-model="searchValue"
     />
 
-    
-    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-4">
+    <section class=" hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-4">
       <category-card
         v-for="(item,i) in categories"
         :key="i"
