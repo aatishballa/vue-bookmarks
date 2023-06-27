@@ -12,9 +12,14 @@
         :bookmark="item"
       />
     </section>
+
+    <add-new-button />
+    <add-new-modal />
   </div>
 </template>
 <script setup lang="ts">
+import AddNewButton from "@/components/AddNewButton.vue";
+import AddNewModal from "@/components/AddNewModal.vue";
 import SearchBar from "@/components/SeachBar.vue";
 import BookmarkCard from "@/components/BookmarkCard.vue"
 import type {Bookmark} from "@/types/response.d.ts"

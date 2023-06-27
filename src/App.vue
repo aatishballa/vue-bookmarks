@@ -4,7 +4,7 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <div class="bg-slate-300 w-screen h-screen">
+  <div class="min-h-screen w-screen">
     <app-header />
     <main>
       <router-view />

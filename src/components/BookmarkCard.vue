@@ -2,13 +2,13 @@
   <a
     :href="bookmark.url"
     target="_blank"
-    class="hover:shadow-lg transition-shadow bg-slate-200 w-full h-25 px-4 py-4 rounded-xl"
+    class="hover:shadow-lg transition-shadow  h-25 px-4 py-4 rounded-xl bg-neutral-200"
   >
     <div
       class="flex flex-col"
       style="height: 100%;"
     >
-      <div class="flex-1">
+      <div class="flex-1 text-black mb-4">
         {{ bookmark.title }}
       </div>
 

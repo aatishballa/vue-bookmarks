@@ -2,7 +2,7 @@
 <template>
   <div class="my-4">
     <input
-      class="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-xl"
+      class="w-full input px-4 py-2 rounded-full bg-neutral-200 text-black placeholder-grey-500 focus:outline-none focus:ring-2 focus:ring-primary"
       type="text"
       placeholder="Search"
       aria-label="Search"
