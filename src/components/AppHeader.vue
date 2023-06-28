@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full navbar sticky top-0 bg-primary shadow-md text-white">
+  <div class="w-full navbar sticky top-0 bg-primary shadow-md text-white font-poppins">
     <div class="flex-1 px-2 mx-2">
       <Icon
         size="32"
